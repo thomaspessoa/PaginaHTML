@@ -263,7 +263,7 @@ body{
 }
 
 
-/*
+
 @media only screen and (max-width: 768px) {
     body {
         padding: 0 2%;
@@ -301,8 +301,8 @@ body{
         padding: 2.2% 2%;
     }
 }
-*/
 
+/*
 @media only screen and (max-width: 768px) {
     body {
         padding: 0 2%;
@@ -357,3 +357,4 @@ body{
         filter: none;
     }
 }
+*/
