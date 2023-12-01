@@ -1,94 +1,96 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Montserrat:ital,wght@1,600&family=Raleway:ital,wght@1,600&display=swap');
 
-:root{
+:root {
     --colorVerde: #62ff53;
     --colorBlack: black;
     --colorBranco: white;
     --colorFundoBotao: #a8efd4;
-    --colorBordaRodaPe:  #98ff8f;
+    --colorBordaRodaPe: #98ff8f;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    box-sizing: border-box;
+body {
     background-color: var(--colorBlack);
     color: var(--colorBranco);
+    font-family: 'Raleway', sans-serif;
 }
 
-
-.cabecalho{
+.cabecalho {
     display: flex;
     align-items: center;
-    justify-content: center;  
-    padding: 2% 52% 0% 0%;
+    justify-content: center;
+    padding: 7% 5%;
 }
 
-.cabecalho__menu{
+.cabecalho__menu {
     display: flex;
-    gap: 80px;
+    gap: 50px;
 }
 
 
+.escrita_certificado {
+    font-size: 1rem;
+    margin-bottom: 2rem; /* Adicionei uma margem maior entre os parágrafos */
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 0.6rem;
+}
 
-.cabecalho__menu__link{
+.cabecalho__menu__link {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--colorVerde);
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
 }
 
-.cabecalho__menu__link:hover{
-    text-decoration:underline var(--colorBordaRodaPe);
+.cabecalho__menu__link:hover {
+    text-decoration: underline var(--colorBordaRodaPe);
     border-radius: 8%;
     padding: 1% 0%;
-
 }
 
-
-.apresentacao{
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
-}
-
-.apresentacao__texto{
-    width: 50%;
+.apresentacao {
+    padding: 5% 5%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    font-family: 'Raleway', sans-serif;
+    gap: 20px;
 }
 
-.titulo{
+.apresentacao__texto {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.titulo {
     text-align: center;
     font-size: 1.7rem;
 }
 
-.negrito__texto{
+.negrito__texto {
     color: var(--colorVerde);
 }
 
-.apresentacao__links{
+.apresentacao__links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.apresentacao__links__subtitulo{
+.apresentacao__links__subtitulo {
     font-size: 1.3rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.3rem;
 }
 
-.apresentacao__links__navegacao{
+.apresentacao__links__navegacao {
     font-family: 'Dosis', sans-serif;
     text-align: center;
     text-decoration: none;
@@ -97,252 +99,192 @@ body{
     margin-bottom: 18px;
     border: 2px solid var(--colorVerde);
     width: 60%;
-    text-align: center;
     padding: 6px 0;
     transition: transform 0.3s ease;
     border-radius: 5%;
-
 }
 
-.apresentacao__links__navegacao:hover{
+.apresentacao__links__navegacao:hover {
     background-color: var(--colorFundoBotao);
     color: rgb(0, 0, 0);
     transform: scale(1.1);
 }
 
-.rodape{
+.rodape {
     margin-top: -3%;
-    padding: 2.2% 0;
+    padding: 2.2% 5%;
     font-size: 1.5;
     border: 1px solid var(--colorBordaRodaPe);
-    width: 99.8%;
 }
 
-.rodape_texto{
+.rodape_texto {
     font-size: 1rem;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
 }
 
-.imagens_redes_social{
-    margin-right: 3%;
-    width: 10%;
-    top: 15%;
-    justify-content: center;
-    align-items: center;
+.imagens_redes_social {
+    width: 30px;
+    margin-right: 5px;
 }
-
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-
-.cabecalho{
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    padding: 2% 52% 0% 0%;
-}
-
-.cabecalho__menu{
-    display: flex;
-    gap: 80px;
-}
-
-
-
-.cabecalho__menu__link{
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--colorVerde);
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.cabecalho__menu__link:hover{
-    text-decoration:underline var(--colorBordaRodaPe);
-    border-radius: 8%;
-    padding: 1% 0%;
-
-}
-
-
-.apresentacao_pagina{
-    padding: 5% 16%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
-}
-
-.apresentacao__certificados_links{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-}
-
-
-.titulo__certificado{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    margin-bottom: 3%;
-    font-size: 1.8rem;
-
-}
-
-.escrita_certificado{
-    font-size: 1rem;
-    margin-bottom: 1%;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-}
-
-.links_certificados{
-    font-size: 1.3rem;
-    text-decoration: none;
-    color:#8ee986;
-    transition: transform 0.3s ease;
-}
-
-.links_certificados:hover{
-    text-decoration: underline var(--colorBordaRodaPe);
-
-}
-
-
-.logo_css{
-    width: 7%;
-    position: absolute;
-    top: 19%;
-    left: 65%;
-    filter: drop-shadow(0 0 0.5rem #2192FF);
-}
-
-.logo_html{
-    width: 8%;
-    position: absolute;
-    top: 23%;
-    left: 75%;   
-    filter: drop-shadow(0 0 0.5rem #FF6D28);
-}
-
-.logo_py{
-    width: 15%;
-    position: absolute;
-    top: 21%;
-    left: 81%;
-    filter: drop-shadow(0 0 0.5rem var(--colorVerde));
-}
-
-.logo_js{
-    width: 11%;
-    position: absolute;
-    top: 42%;
-    left: 68%;
-    filter: drop-shadow(0 0 0.5rem #FCE700);
-}
-
-.logo_react{
-    width: 11%;
-    position: absolute;
-    top: 45%;
-    left: 79.50%;
-    filter: drop-shadow(0 0 0.6rem #00b5fc);
-}
-
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-
-.foto_eu{
-    margin-top: -5rem;
-    width: 35%;
-    filter: drop-shadow(0 0 0.6rem #36ff0eee);
-    border: 0.1rem solid var(--colorBordaRodaPe);
+.foto_eu {
+    width: 60%;
+    box-shadow: 0 0 2rem rgba(27, 255, 57, 0.7);
     border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.titulo__certificado {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2.3rem;
+    text-decoration: underline;
+
 }
 
 
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 0 2%;
-    }
 
-    .cabecalho {
-        padding: 2% 2% 0 2%;
-    }
-
-    .cabecalho__menu {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .apresentacao,
-    .apresentacao_pagina {
-        flex-direction: column;
-        padding: 5% 5%;
-    }
-
-    .apresentacao__texto {
-        width: 100%;
-    }
-
-    .apresentacao__links {
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .apresentacao__links__navegacao {
-        width: 100%;
-    }
-
-    .rodape {
-        padding: 2.2% 2%;
-    }
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha se não couberem na largura da tela */
 }
 
-/*
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 0 2%;
-    }
+.logo_css, .logo_html, .logo_py, .logo_js, .logo_react {
+    max-width: 20.5%; /* Garante que a largura não ultrapasse a largura máxima da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 1%; /* Adiciona uma pequena margem entre as imagens */
+    margin-bottom: 2rem;
+    margin-right: 4%;
+    
+}
 
+.logo_css { 
+    filter: drop-shadow(0 0 0.7rem #0058fc);
+}
+.logo_html { 
+    filter: drop-shadow(0 0 0.7rem #ff1e4b);
+}
+.logo_py { 
+    filter: drop-shadow(0 0 0.7rem #c1fc00);
+}
+.logo_js { 
+    filter: drop-shadow(0 0 0.7rem #7efc00);
+}
+.logo_react { 
+    filter: drop-shadow(0 0 0.7rem #1100fc);
+}
+
+/* Certifique-se de ajustar os valores conforme necessário para a versão web e para telefone */
+@media only screen and (min-width: 768px) {
     .cabecalho {
-        padding: 2% 2% 0 2%;
+        padding: 2% 20%;
     }
 
-    .cabecalho__menu {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .apresentacao,
-    .apresentacao_pagina {
-        flex-direction: column;
-        padding: 5% 5%;
+    .apresentacao {
+        flex-direction: row;
     }
 
     .apresentacao__texto {
         width: 100%;
+        
     }
 
     .apresentacao__links {
+        text-align: center;
+        width: 50%;
+    }
+    .apresentacao__certificados {
         width: 100%;
-        align-items: flex-start;
+        text-align: center;
     }
-
-    .apresentacao__links__navegacao {
+    
+    .apresentacao__certificados_links {
         width: 100%;
     }
-
-    .rodape {
-        padding: 2.2% 2%;
+    
+    .titulo__certificado {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
-
+    
+    .links_certificados {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+    
     .foto_eu {
+        width: 25%;
+        box-shadow: 0 0 2rem rgba(62, 239, 22, 0.7);
+        margin-left: 11%; /* Ajuste o valor conforme necessário */
+    }
+    
+    .escrita_certificado,
+    .links_certificados {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 2.3rem;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente (caso necessário) */
+        margin-left: 13%; /* Ajuste o valor conforme necessário */
+        width: 74%; /* Ajuste a largura conforme necessário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-bottom: 2.5rem;
+    }
+
+    .apresentacao__links__navegacao {
+        /* ... Seus estilos anteriores ... */
+        width: 60%; /* Ajuste a largura conforme necessário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        margin-bottom: 1.4rem;
+    }
+
+    .apresentacao__links {
+        text-align: center; /* Centraliza os ícones de redes sociais */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+
+    .apresentacao_pagina {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinha o texto à esquerda */
+        text-align: left; /* Alinha o texto à esquerda */
+        padding-left: 5%;
+    }
+
+    .apresentacao__certificados {
+        width: 70%; /* Ajuste a largura conforme necessário */
+    }
+
+    .apresentacao__certificados_links {
         width: 100%;
-        margin-top: -5rem;
+    }
+
+    .flex-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se não houver espaço suficiente */
+        margin-top: 2rem; /* Adiciona algum espaço entre os certificados e as imagens */
+        margin-bottom: 2rem; /* Adiciona algum espaço abaixo das imagens */
     }
 
     .logo_css,
@@ -350,11 +292,42 @@ body{
     .logo_py,
     .logo_js,
     .logo_react {
-        position: static;
-        width: 100%;
-        margin-bottom: 1rem;
-        left: auto;
-        filter: none;
+        width: 11%; /* Tamanho fixo para as imagens */
+        height: auto; /* Altura ajustada automaticamente para manter a proporção */
+        margin: 1%; /* Adiciona uma pequena margem entre as imagens */
+        margin-bottom: 2rem;
+    }
+
+
+    .titulo__certificado {
+        text-align: center; /* Alinha o texto no centro */
+        margin-top: 2rem; /* Adiciona espaço acima do título */
+        margin-bottom: 2.5rem; /* Adiciona espaço abaixo do título */
+        display: flex;
+        padding-left: 2rem;
+    }
+
+    .logo_html { 
+        filter: drop-shadow(0 0 0.6rem #fc0047);
+    }
+    .logo_css { 
+        filter: drop-shadow(0 0 0.6rem #0061fc);
+    }
+    .logo_js { 
+        filter: drop-shadow(0 0 0.6rem #b5fc00);
+    }
+    .logo_py { 
+        filter: drop-shadow(0 0 0.6rem #fcef00);
+    }
+    .logo_react { 
+        filter: drop-shadow(0 0 0.6rem #0058fc);
+    }
+
+
+}
+
+
+    .rodape {
+        margin-top: 2rem; /* Adiciona algum espaço acima do rodapé */
     }
 }
-*/
